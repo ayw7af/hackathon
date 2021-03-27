@@ -11,7 +11,7 @@ import pandas as pd
 import ui 
 import data_analysis as da
 
-app = dash.Dash(__name__, external_stylesheets=ui.external_stylesheets)
+app = dash.Dash(__name__, external_stylesheets= ui.external_stylesheets)
 
 fig = px.bar(da.df_sub, x="age", y="amount", color="category", barmode="group")
 
