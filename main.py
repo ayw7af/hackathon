@@ -12,6 +12,7 @@ import ui
 import data_analysis as da
 
 app = dash.Dash(__name__, external_stylesheets= ui.external_stylesheets)
+app.title = 'Fraud Classification'
 server = app.server
 
 fig = px.bar(da.df_sub, x="age", y="amount", color="category", barmode="group")
