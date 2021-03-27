@@ -10,7 +10,7 @@ app = dash.Dash(__name__, external_stylesheets= ui.external_stylesheets)
 app.title = 'Fraud Classification'
 server = app.server
 
-fig = px.bar(da.df_sub, x="age", y="amount", color="category", barmode="group")
+fig = px.histogram(da.df, x="amount")
 
 app.layout = html.Div(children=[
     html.Header(
@@ -25,6 +25,18 @@ app.layout = html.Div(children=[
         children=[
             dcc.Graph(
                 id='graph1',
+                figure=fig
+            ),
+            dcc.Graph(
+                id='graph2',
+                figure=fig
+            ),
+            dcc.Graph(
+                id='graph3',
+                figure=fig
+            ),
+            dcc.Graph(
+                id='graph4',
                 figure=fig
             ),
         ]
