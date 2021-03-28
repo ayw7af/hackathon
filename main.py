@@ -7,7 +7,7 @@ import ui
 import data_analysis as da
 
 app = dash.Dash(__name__, external_stylesheets= ui.external_stylesheets)
-app.title = 'Fraud Classification'
+app.title = 'Credit Card Transactions Visualizations'
 server = app.server
 
 data_url = 'https://raw.githubusercontent.com/ayw7af/hackathon/main/bs140513_032310.csv'
