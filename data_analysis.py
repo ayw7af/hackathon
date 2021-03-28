@@ -152,7 +152,7 @@ def is_category (float_df, numCategories):
     return arrays
 
     
-def getColHist(df, col = 7): #for category):
+def getColHist(data_url,col = 7): #for category):
     df = pd.read_csv(data_url)
     
     categories = df['category'].unique()
@@ -179,10 +179,11 @@ def getColHist(df, col = 7): #for category):
     return float_df
 
 if __name__ == "__main__":
-    data_url = 'https://raw.githubusercontent.com/ayw7af/hackathon/main/bs140513_032310.csv'
-    #df = getData (data_url)
-    df = getColHist(data_url)
-    d = is_category (df, 15)
-    print(d)
-    #kNN (df)
-    #SVM (df)
+    # data_url = 'https://raw.githubusercontent.com/ayw7af/hackathon/main/bs140513_032310.csv'
+    # #df = getData (data_url)
+    # df = getColHist(data_url)
+    # d = is_category (df, 15)
+    # print(d)
+    # kNN (df) 
+    # SVM (df) 
+    ...
